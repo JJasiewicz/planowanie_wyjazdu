@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
         start.setOnClickListener {
             if(lastDay[0] <= selDate[0] || lastDay[1] <= selDate[1] || lastDay[2] <= selDate[2])
-                for(i in 0 <= until < 3)
+                for(i in 0 until 3)
                     firstDay[i] = selDate[i]
 
 
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         end.setOnClickListener {
-            for(i in 0 <= until < 3)
+            for (i in 0  until  3)
                 lastDay[i] = selDate[i]
             endtxt.text = "Koniec Wyjazdu: ${System.lineSeparator()}${lastDay[0]}-${lastDay[1]}-${lastDay[2]}"
 
