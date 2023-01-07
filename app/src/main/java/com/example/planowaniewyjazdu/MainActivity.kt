@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
             if(lastDay[0] <= selDate[0] || lastDay[1] <= selDate[1] || lastDay[2] <= selDate[2])
                 for(i in 0 until 3)
                     firstDay[i] = selDate[i]
+            startxt.text = "Początek Wyjazdu: ${System.lineSeparator()}${firstDay[0]}-${firstDay[1]}-${firstDay[2]}"
 
 
                 if(lastDay[0] != 0 && firstDay[0] != 0)
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         val departureDay = (firstDay[0]*360) + (firstDay[1]*30) + firstDay[2]
         val backDay = (lastDay[0]*360) + (lastDay[1]*30) + lastDay[2]
         val diff = departureDay.toChar() - backDay.toChar()
-        finaltxt.text = " ${System.lineSeparator()}${diff.absoluteValue+1}"
+        finaltxt.text = "Czas Wyjazdu: ${System.lineSeparator()}${diff.absoluteValue+1}"
 
     }
 
