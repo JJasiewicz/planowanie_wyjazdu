@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         val calendar = findViewById<CalendarView>(R.id.calendar)
         val start = findViewById<Button>(R.id.start)
         val end = findViewById<Button>(R.id.end)
-        val data = Date().time
         val startxt = findViewById<TextView>(R.id.starttxt)
         val endtxt = findViewById<TextView>(R.id.endtxt)
         val finaltxt = findViewById<TextView>(R.id.finaltxt)
